@@ -3,13 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aspire Dashboard</title>
+    <title>Responsive Dashboard</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.js"></script>
+    <script defer src="script.js"></script>
 </head>
-<body class="bg-gray-100 flex items-center justify-center h-screen">
-    <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
-        <h1 class="text-2xl font-bold mb-6 text-center">Welcome to the back</h1>
-        <p class="text-gray-700">This is the  dashboard. You have successfully logged in.</p>
+<body class="bg-gray-100">
+
+    <div class="flex">
+
+        <!-- Sidebar -->
+        <div class="w-64 bg-white h-screen shadow-md">
+            <div class="p-6">
+                <nav class="mt-6">
+                    <a href="#home" id="home-link" class="block py-25 px-4 rounded transition duration-200 hover:bg-gray-200"><i class="fas fa-home"></i> Home</a>
+                    <a href="#tasks" id="tasks-link" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-200"><i class="fas fa-tasks"></i> Tasks</a>
+                    <a href="#calendar" id="calendar-link" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-200"><i class="fas fa-calendar-alt"></i> Calendar</a>
+                    <a href="#career" id="career-link" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-200"><i class="fas fa-briefcase"></i> Career</a>
+                    <a href="#mentorship" id="mentorship-link" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-200"><i class="fas fa-user-friends"></i> Mentorship</a>
+                    <a href="#skill" id="skill-link" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-200"><i class="fas fa-lightbulb"></i> Skill Development</a>
+                    <a href="#course" id="course-link" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-200"><i class="fas fa-book"></i> Course</a>
+                    <a href="#wellness" id="wellness-link" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-200"><i class="fas fa-heart"></i> Wellness</a>
+                    <a href="#settings" id="settings-link" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-200 mt-6"><i class="fas fa-cog"></i> Settings</a>
+                    <a href="#help" id="help-link" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-200"><i class="fas fa-question-circle"></i> Help</a>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="flex-1 p-10">
+            <div id="content" class="min-h-screen overflow-y-auto">
+                <section id="home" class="mb-10">
+                    <h1 class="text-3xl font-bold mb-6">Welcome</h1>
+                    <p>Click on the sidebar links to explore various features.</p>
+                </section>
+            </div>
+        </div>
     </div>
+
 </body>
+<script src="../js/app.js"></script>
+
 </html>
