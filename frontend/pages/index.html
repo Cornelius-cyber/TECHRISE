@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,124 +7,237 @@
     <meta name="keywords" content="career, management, tasks, opportunities, mentorship, skill development">
     <meta name="author" content="Your Name">
     <title>Aspire - All-in-One Career Management App</title>
-    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <header>
-        <nav>
-            <div class="logo-left">
-                <img src="../assets/images/logo.png" alt="Aspire Logo">
-                <h1>Aspire</h1>
+<body class="font-sans antialiased bg-gray-100">
+    <!-- Header -->
+    <header class="bg-white shadow">
+        <nav class="container mx-auto flex justify-between items-center py-6">
+            <div class="flex items-center space-x-1">
+                <img src="../assets/images/logo.png" alt="Aspire Logo" class="h-10 w-13">
+                <h1 class="text-2xl font-bold text-gray-900">Aspire</h1>
             </div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+            
+            
+            <ul class="flex space-x-6 text-gray-700">
+                <li><a href="#home" class="hover:text-blue-600">Home</a></li>
+                <li><a href="#about" class="hover:text-blue-600">About</a></li>
+                <li><a href="#features" class="hover:text-blue-600">Features</a></li>
+                <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
             </ul>
-            <a href="register.html" class="cta-right">Get Started</a>
+            <a href="register.html" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Get Started</a>
         </nav>
     </header>
-    <main>
-        <section id="hero">
-            <div class="hero-content">
-                <h2>All-in-One Career Management App</h2>
-                <p>Your go-to solution for managing tasks, tracking career opportunities, and maintaining a balanced lifestyle.</p>
-                <a href="#get-started" class="cta">Get Started</a>
+
+    <!-- Hero Section -->
+    <section id="hero" class="bg-blue-600 text-white py-16 w-full max-w-screen-xl mx-auto">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-center text-center md:text-left px-4">
+            <!-- Text Content -->
+            <div class="md:w-1/2">
+                <h2 class="text-5xl font-bold mb-6 leading-tight">
+                    All-in-One Career Management App
+                </h2>
+                <p class="text-gray-200 mb-6">
+                    Your go-to solution for managing tasks, tracking career opportunities, 
+                    and maintaining a balanced lifestyle.
+                </p>
+                <div class="space-x-4">
+                    <a href="#get-started" class="bg-white text-blue-600 px-6 py-3 rounded font-bold hover:bg-gray-200 transition">
+                        <i class="fas fa-rocket"></i> Get Started
+                    </a>
+                    <a href="#features" class="text-white px-6 py-3 rounded border border-white font-bold hover:bg-white hover:text-blue-600 transition">
+                        <i class="fas fa-cogs"></i> Features
+                    </a>
+                </div>
             </div>
-            <div class="hero-image">
-                <img src="../assets/images/hero-image.png" alt="Aspire Hero Image">
-            </div>
-        </section>
-        <section id="about">
-            <h2>About Us</h2>
-            <p>Aspire is designed to help you stay organized, focused, and on track with your career goals. Whether you're a student or a professional, our app offers the tools you need to succeed.</p>
-        </section>
         
-        <section id="features">
-            <h2>Key Features</h2>
-            <div class="features-grid">
-                <div class="feature-box">
-                    <h3>Task and Time Management</h3>
-                    <p>Integrated calendar with deadline reminders, to-do lists, and Pomodoro timers.</p>
-                </div>
-                <div class="feature-box">
-                    <h3>Career Opportunities Portal</h3>
-                    <p>Personalized internship and job recommendations, application tracking, and notifications.</p>
-                </div>
-                <div class="feature-box">
-                    <h3>Mentorship and Guidance</h3>
-                    <p>Mentor-matching, career advice blogs, video tutorials, and forums.</p>
-                </div>
-                <div class="feature-box">
-                    <h3>Skill Development</h3>
-                    <p>Guided project-building modules, skill tracking dashboard, and portfolio builder.</p>
-                </div>
-                <div class="feature-box">
-                    <h3>Wellness and Balance Tools</h3>
-                    <p>Daily self-care reminders, stress management tools, and goal-setting tracker.</p>
-                </div>
-                <div class="feature-box">
-                    <h3>Affordability Focus</h3>
-                    <p>Free core features with optional low-cost premium plans, scholarships, and discounts.</p>
-                </div>
-            </div>
-        </section>
-        <section id="faq">
-            <h2>Frequently Asked Questions</h2>
-            <div class="faq-item">
-                <h3>What is Aspire?</h3>
-                <p>Aspire is an all-in-one career management app designed to help you stay organized, focused, and on track with your career goals.</p>
-            </div>
-            <div class="faq-item">
-                <h3>How can I sign up?</h3>
-                <p>You can sign up by clicking the "Get Started" button on the homepage and filling out the registration form with your details.</p>
-            </div>
-            <div class="faq-item">
-                <h3>Is Aspire free to use?</h3>
-                <p>Yes, Aspire offers free core features with optional low-cost premium plans for additional functionalities.</p>
-            </div>
-            <div class="faq-item">
-                <h3>How do I contact customer support?</h3>
-                <p>You can contact our customer support through the contact form on this page or by emailing us at support@aspire.com.</p>
-            </div>
-        </section>
-        
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <form>
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" required></textarea>
-                </div>
-                <button type="submit" class="cta">Submit</button>
-            </form>
-        </section>
-        
-        
-    </main>
-    <footer>
-        <div class="footer-content">
-            <div class="footer-logo">
-                <img src="../assets/images/logo.png" alt="Aspire Logo">
-            </div>
-            <ul class="footer-links">
-                <li><a href="#features">Home</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+    </section>
+
+    
+    <!-- About Us Section -->
+    <section id="about" class="bg-white py-5">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">About Us</h2>
+            <p class="text-lg text-gray-700 max-w-2xl mx-auto">
+                Aspire is your trusted partner in career management, offering tools and 
+                resources to help you reach your full potential. Whether you're a student, 
+                professional, or career-changer, we provide guidance, opportunities, and 
+                support tailored to your goals.
+            </p>
         </div>
-        <p>&copy; 2024 Aspire. All rights reserved.</p>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-10 bg-gray-100">
+        <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Key Features</h2>
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Task and Time Management -->
+            <div class="bg-white p-6 rounded shadow text-center">
+                <i class="fas fa-tasks text-blue-600 text-4xl mb-4"></i>
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">Task and Time Management</h3>
+                <p class="text-gray-700">Integrated calendar with deadline reminders, to-do lists, and Pomodoro timers to stay focused.</p>
+            </div>
+            
+            <!-- Career Opportunities Portal -->
+            <div class="bg-white p-6 rounded shadow text-center">
+                <i class="fas fa-search text-blue-600 text-4xl mb-4"></i>
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">Career Opportunities Portal</h3>
+                <p class="text-gray-700">Personalized internship and job recommendations, application tracking, and notifications about events.</p>
+            </div>
+            
+            <!-- Mentorship and Guidance -->
+            <div class="bg-white p-6 rounded shadow text-center">
+                <i class="fas fa-chalkboard-teacher text-blue-600 text-4xl mb-4"></i>
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">Mentorship and Guidance</h3>
+                <p class="text-gray-700">Mentor-matching, career advice blogs, video tutorials, and community forums to support your growth.</p>
+            </div>
+            
+            <!-- Skill Development and Portfolio Building -->
+            <div class="bg-white p-6 rounded shadow text-center">
+                <i class="fas fa-cogs text-blue-600 text-4xl mb-4"></i>
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">Skill Development and Portfolio Building</h3>
+                <p class="text-gray-700">Guided project-building modules and skill-tracking dashboard to help you create an impressive portfolio.</p>
+            </div>
+            
+            <!-- Wellness and Balance Tools -->
+            <div class="bg-white p-6 rounded shadow text-center">
+                <i class="fas fa-heart text-blue-600 text-4xl mb-4"></i>
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">Wellness and Balance Tools</h3>
+                <p class="text-gray-700">Daily self-care reminders, stress management tools, and goal-setting trackers to maintain balance in your life.</p>
+            </div>
+            
+            <!-- Affordability Focus -->
+            <div class="bg-white p-6 rounded shadow text-center">
+                <i class="fas fa-hand-holding-usd text-blue-600 text-4xl mb-4"></i>
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">Affordability Focus</h3>
+                <p class="text-gray-700">Free core features with low-cost premium plans and access to scholarships and discounts for paid tools and certifications.</p>
+            </div>
+        </div>
+    </section>
+    
+ <!---sign-now-->
+    <section class="py-16 bg-blue-600 text-white">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-center text-center md:text-left px-4">
+            <div class="md:w-1/2 mt-12 md:mt-0">
+                <div class="w-full bg-gradient-to-r from-blue-800 to-blue-500 p-8 rounded-lg shadow-lg text-center">
+                    <h3 class="text-3xl font-semibold mb-4">Stay Ahead in Your Career</h3>
+                    <p class="text-gray-200 mb-6">Sign up today and take the first step toward managing your career and goals effectively.</p>
+                    <a href="#sign-up" class="bg-white text-blue-600 px-6 py-3 rounded font-bold hover:bg-gray-200 transition">
+                        <i class="fas fa-user-plus"></i> Sign Up Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---faq section-->
+    <section id="faq" class="py-16 bg-white">
+        <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Frequently Asked Questions</h2>
+        <div class="container mx-auto px-4">
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="bg-gray-100 rounded-md shadow-md p-4">
+                    <button class="w-full text-left text-lg font-semibold text-gray-900 focus:outline-none flex justify-between items-center" onclick="toggleFaq(1)">
+                        <span>What is Aspire?</span>
+                        <i class="fas fa-chevron-down text-gray-500"></i>
+                    </button>
+                    <div id="faq1" class="hidden mt-2 text-gray-700 text-base">
+                        Aspire is an all-in-one career management platform that helps you track career opportunities, manage tasks, and receive mentorship.
+                    </div>
+                </div>
+    
+                <!-- FAQ Item 2 -->
+                <div class="bg-gray-100 rounded-md shadow-md p-4">
+                    <button class="w-full text-left text-lg font-semibold text-gray-900 focus:outline-none flex justify-between items-center" onclick="toggleFaq(2)">
+                        <span>How do I get started with Aspire?</span>
+                        <i class="fas fa-chevron-down text-gray-500"></i>
+                    </button>
+                    <div id="faq2" class="hidden mt-2 text-gray-700 text-base">
+                        Getting started with Aspire is simple! Just sign up for an account, create your profile, and start exploring features tailored to your needs.
+                    </div>
+                </div>
+    
+                <!-- FAQ Item 3 -->
+                <div class="bg-gray-100 rounded-md shadow-md p-4">
+                    <button class="w-full text-left text-lg font-semibold text-gray-900 focus:outline-none flex justify-between items-center" onclick="toggleFaq(3)">
+                        <span>Is there a mobile app available?</span>
+                        <i class="fas fa-chevron-down text-gray-500"></i>
+                    </button>
+                    <div id="faq3" class="hidden mt-2 text-gray-700 text-base">
+                        Yes, Aspire is available on both iOS and Android platforms for easy access on the go.
+                    </div>
+                </div>
+    
+                <!-- FAQ Item 4 -->
+                <div class="bg-gray-100 rounded-md shadow-md p-4">
+                    <button class="w-full text-left text-lg font-semibold text-gray-900 focus:outline-none flex justify-between items-center" onclick="toggleFaq(4)">
+                        <span>How can I contact support?</span>
+                        <i class="fas fa-chevron-down text-gray-500"></i>
+                    </button>
+                    <div id="faq4" class="hidden mt-2 text-gray-700 text-base">
+                        You can reach our support team through the contact form on the website, or by emailing support@aspire.com.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Footer Section -->
+    <footer class="bg-blue-600 text-white py-12 shadow-lg">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0 md:space-x-16">
+            
+            <!-- Logo and Copyright Section -->
+            <div class="flex items-center space-x-4">
+                <span class="font-bold text-lg">Aspire</span>
+            </div>
+            
+            <!-- Company Info Section -->
+            <div class="text-center md:text-left space-y-4">
+                <h3 class="text-xl font-semibold text-white">Company</h3>
+                <ul class="space-y-2">
+                    <li><a href="#home" class="text-white hover:text-blue-200 transition duration-300">Home</a></li>
+                    <li><a href="#features" class="text-white hover:text-blue-200 transition duration-300">Features</a></li>
+                    <li><a href="#about" class="text-white hover:text-blue-200 transition duration-300">About</a></li>
+                    <li><a href="#contact" class="text-white hover:text-blue-200 transition duration-300">Contact</a></li>
+                </ul>
+            </div>
+    
+            <!-- Sign-Up Section -->
+            <div class="text-center md:text-left space-y-4">
+                <h3 class="text-xl font-semibold text-white">Stay Updated</h3>
+                <p class="text-white">Sign up to receive the latest updates and career tips.</p>
+                <form action="#" method="post" class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
+                    <input type="email" name="email" placeholder="Enter your email" class="p-3 rounded-md text-gray-800 w-64" required>
+                    <button type="submit" class="bg-blue-200 text-blue-600 hover:bg-blue-300 px-6 py-3 rounded-md font-semibold transition duration-300">Sign Up</button>
+                </form>
+            </div>
+    
+            <!-- Social Media Links -->
+            <div class="text-center md:text-left">
+                <h3 class="text-xl font-semibold text-white">Follow Us</h3>
+                <ul class="flex space-x-6 justify-center md:justify-start">
+                    <li><a href="#" class="text-white hover:text-blue-200 transition duration-300"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#" class="text-white hover:text-blue-200 transition duration-300"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#" class="text-white hover:text-blue-200 transition duration-300"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="#" class="text-white hover:text-blue-200 transition duration-300"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+    
+        </div>
+    
+        <!-- Bottom Section with Copyright -->
+        <div class="text-center mt-8">
+            <p class="text-sm text-white">&copy; 2024 Aspire. All rights reserved.</p>
+        </div>
     </footer>
-    <script src="../js/app.js"></script>
+    
+
+
 </body>
+<script src="../js/app.js"></script>
 </html>
