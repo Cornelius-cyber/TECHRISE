@@ -40,4 +40,15 @@ Aspire is an all-in-one career management application designed to help users man
 - **Portfolio Building**: Follow step-by-step instructions to complete tech projects and upload finished work to a shareable portfolio.
 - **Wellness Tracking**: Set daily self-care reminders and goals, track mood and productivity progress.
 
+## Technology Stack
+- **Frontend**: HTML, Tailwind CSS, JavaScript
+- **Backend**: SQL (for database management)
+- **Additional Libraries**: FontAwesome for icons
 
+## Installation
+To get started with Aspire, follow these steps:
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/yourusername/aspire.git
+   cd aspire
