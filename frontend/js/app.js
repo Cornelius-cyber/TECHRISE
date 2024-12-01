@@ -1,3 +1,5 @@
+
+
 document.addEventListener('DOMContentLoaded', () => {
     const content = document.getElementById('content');
 
@@ -179,3 +181,12 @@ document.addEventListener('DOMContentLoaded', () => {
         calendar.render();
     }
 });
+
+function toggleFaq(faqNumber) { const faqContent = 
+    document.getElementById(`faq${faqNumber}`); 
+    const icon = faqContent.previousElementSibling.querySelector('i'); 
+    if (faqContent.classList.contains('hidden')) { faqContent.classList.remove('hidden'); 
+        icon.classList.remove('fa-chevron-down'); icon.classList.add('fa-chevron-up'); } 
+        else { faqContent.classList.add('hidden'); 
+    icon.classList.remove('fa-chevron-up'); icon.classList.add('fa-chevron-down');
+ } }
